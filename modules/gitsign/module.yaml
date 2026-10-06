@@ -1,0 +1,6 @@
+schema_version: 1
+name: gitsign
+version: v1.0
+description: "Installs gitsign for commit signing via Sigstore/TAS"
+execute:
+- script: install.sh
