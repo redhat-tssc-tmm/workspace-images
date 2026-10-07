@@ -37,3 +37,11 @@ install -m 0755 "$tmp/$CACHE_ASSET" /usr/local/bin/gitsign-credential-cache
 rm -rf "$tmp"
 echo "gitsign-credential-cache installed successfully."
 gitsign-credential-cache --version 2>/dev/null || echo "gitsign-credential-cache binary installed (version check skipped)."
+
+# --- Part 3: Install helper scripts ---
+SHARE_DIR="/usr/local/share/gitsign"
+mkdir -p "$SHARE_DIR"
+cp /tmp/scripts/gitsign/setup-gitsign-cache.sh "$SHARE_DIR/"
+cp /tmp/scripts/gitsign/gitsign-login.sh "$SHARE_DIR/"
+chmod +x "$SHARE_DIR"/*.sh
+echo "Helper scripts installed to $SHARE_DIR"
