@@ -15,4 +15,5 @@ modules:
   - name: opencode
   - name: zoocode
   - name: kilocode
+  - name: syft
   - name: gitsign

@@ -1,0 +1,6 @@
+schema_version: 1
+name: syft
+version: v1.0
+description: "Installs syft for container image SBOM generation (RHDA Containerfile scanning)"
+execute:
+- script: install.sh
